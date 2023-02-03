@@ -1,14 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using System.Linq;
-using System.Collections;
 
-namespace Homework14_2
+namespace Homework14_4
 {
-
-    //https://referencesource.microsoft.com/#mscorlib/system/collections/generic/list.cs,cf7f4095e4de7646 :)
-
 
     public class MyList<T> : IMyList<T>, IEnumerable
     {
@@ -91,15 +87,12 @@ namespace Homework14_2
         {
             get
             {
-                
                 return _items[index];
             }
 
             set
             {
-                
                 _items[index] = value;
-               
             }
         }
 
@@ -125,7 +118,7 @@ namespace Homework14_2
                 else
                 {
                     Reset();
-                    yield break;    
+                    yield break;
                 }
             }
         }

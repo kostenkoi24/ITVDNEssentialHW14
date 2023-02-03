@@ -25,6 +25,12 @@ namespace Homework14_2
             Console.WriteLine(myList[2]);
 
 
+            foreach (int list in myList)
+            {
+                Console.WriteLine($"Name: {list}");
+            }
+
+
 
             Console.ReadKey();
             
